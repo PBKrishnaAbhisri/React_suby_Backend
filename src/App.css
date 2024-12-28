@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  }
+  .navSection{
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  background-color:#D8125B;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+  font-size: large;
+  }
+  form h3{
+    color: #D8125B;
+  }
+  .sideBarSection {
+    width: 100%;
+    max-width: 15%;
+    height: 95vh;
+    padding-top: 10px;
+    background-color: lightgray;
+  }
+    .sideBarSection ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
+    }
+    .collectionSection{
+      display: flex;
+    }
+
+    /* loginsetion */
+.loginSection , .registerSection {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+  h3{
+    color: #D8125B;
+  }
+  .authForm label{
+    width: 100%;
+    max-width: 55%;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  .authForm {
+  width: 100%;
+  max-width: 50%;
+  /* border: 1px solid; */
+  margin-top: -230px;
+  }
+  form{
+    background-color: #fef2f6;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(245,61,113,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(245,61,113,1);
+    box-shadow: 10px 10px 5px 0px rgb(255, 127, 163);
+    margin-bottom: -19px;
+  }
+  .authForm {
+    width: 100%;
+    max-width: 50%;
+    margin-top: -230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid gray;
+  
+    border-radius: 10px;
+    }
+    .authForm input {
+    width: 100%;
+    max-width: 55%;
+    height: 1.4rem;
+    margin-bottom: 3px;
+    }
+    .btnSubmit button {
+      margin-bottom: 6px;
+      background-color: #fef2f6;
+      border: 1px solid #D8125B ;
+    }
+   .btnSubmit button:hover{
+      border: 1px solid #D8125B ;
+      background-color:#D8125B ;
+      color: white;
+    }
+    /* add FIRM*/
+    .firmSection, .productSection{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgb(75, 255, 234);
+    }
+    .tableForm{
+      width: 100%;
+      max-width: 50%;
+      margin-top: -100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid gray;
+      border-radius: 10px;
+    }
+    .tableForm input{
+      width: 100%;
+      max-width: 55%;
+      height: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .tableForm label{
+      width: 100%;
+      max-width: 55%;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .cook img{
+      /* border: 2px solid red; */
+      margin-top: 50px;
+      margin-left: 350px;
+      width: 100%;
+      max-width: 400px;
+      height: 500px;
+
+    }
+/* check box inputs */
+.checkInp {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  margin-left: 165px;
+}
+.inputsContainer {
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+}
+.logout {
+  cursor: pointer;
+}
+
+ .checkInp label{
+  width: 20%;
+}
+.checkbox-container {
+  width: 100%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox-container label {
+  width: 35%;
+  /* border: 1px solid red; */
+  }
+  .checkbox-container input {
+    margin-left: - 200px;
+  }
+
+  .checkbox-container2 {
+    /* border: 1px solid green; */
+    width: 100%;
+    max-width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkbox-container2 label {
+    font-size: small;
+    }
+    .checkbox-container2 input {
+      margin-left: 10px;
+    }
+    /*product table*/
+    .productSection {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .product-table {
+      width: 80vw;
+      border-collapse: collapse;
+  }
+  
+  .product-table th,
+  .product-table td {
+      border: 1px solid rgb(128, 128, 128);
+      padding: 8px;
+  }
+  
+  .product-table th {
+      text-align: left;
+      background-color: rgb(47, 77, 212);
+      color: white;
+  }
+  
+  .deleteBtn {
+      color: red;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  
+.errorSection{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.errorSection h4{
+  font-size: 4rem;
+}
