@@ -38,15 +38,17 @@ const LandingPage = () => {
 
 
 
-  const logOutHandler =()=>{
-    confirm("Are you sure to logout?")
+  const logOutHandler = () => {
+    if (confirm("Are you sure you want to logout?")) {
+      // Execute logout logic only if the user confirms
       localStorage.removeItem("loginToken");
       localStorage.removeItem("firmId");
-      localStorage.removeItem('firmName');
-      setShowLogOut(false)
-      setShowFirmTitle(true)
-      setShowWelcome(false)
-  }
+      localStorage.removeItem("firmName");
+      setShowLogOut(false);
+      setShowFirmTitle(true);
+      setShowWelcome(false);
+    }
+  };
 
 const showLoginHandler =()=>{
     setShowLogin(true)

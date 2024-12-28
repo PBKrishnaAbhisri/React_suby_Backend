@@ -30,14 +30,16 @@ const Login = ({showWelcomeHandler}) => {
       const vendorId = data.vendorId;
       console.log("checking for vendor id:" , vendorId);
       const vendorResponse = await fetch(`${API_URL}/vendor/single-vendor/${vendorId}`);
+      window.location.reload();
       const vendorData = await vendorResponse.json();
           if(vendorResponse.ok){
             const vendorFirmId = vendorData.vendorFirmId;
             const vendorFirmName = vendorData.vendor.firm[0].firmName;
             localStorage.setItem('firmId', vendorFirmId);
             localStorage.setItem('firmName', vendorFirmName);
+            
             window.location.reload()
-
+            console.log('refer');
           }
       } catch (error) {
         console.error("Login failed", error);
